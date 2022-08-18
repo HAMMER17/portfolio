@@ -1,0 +1,120 @@
+.project {
+  width: 100%;
+  height: 100vh;
+  background: url('../../img/win.jpg');
+}
+
+.nav-ul .li a {
+  color: white;
+}
+
+.cube-nav {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+.cube {
+  position: relative;
+  transform: skewY(-15deg);
+  color: black;
+  font-size: 30px;
+}
+
+.hello {
+  width: 200px;
+  padding: 30px;
+  background: linear-gradient(green, blue);
+  letter-spacing: 5px;
+  animation: anime 10s linear infinite;
+}
+
+@keyframes anime {
+
+  0%,
+  100% {
+    transform: translateX(0);
+    background: linear-gradient(180deg, orange, red);
+    transition: 0.5s;
+  }
+
+  50% {
+    transform: translateX(500px);
+    background: linear-gradient(180deg, red, orange);
+    transition: 0.5s;
+  }
+}
+
+.hello::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -90px;
+  width: 90px;
+  height: 100%;
+  transform-origin: right;
+  transform: skewY(45deg);
+  background: linear-gradient(blue, green);
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.hello::after {
+  content: '';
+  position: absolute;
+  top: -90px;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  background: linear-gradient(315deg, green, blue);
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.hello1 {
+  width: 200px;
+  padding: 30px;
+  background: linear-gradient(green, blue);
+  animation: anime 6s linear infinite;
+  transform: translateZ(150px);
+}
+
+.hello1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -90px;
+  width: 90px;
+  height: 100%;
+  transform-origin: right;
+  transform: skewY(45deg);
+  background: linear-gradient(blue, green);
+  opacity: 0.9;
+  transition: 1s;
+
+}
+
+.hello1::after {
+  content: '';
+  position: absolute;
+  top: -90px;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  background: linear-gradient(315deg, green, blue);
+  opacity: 0.9;
+  transition: 1s;
+}
+
+.p2 {
+  position: absolute;
+  top: 100px;
+  left: 1100px;
+  width: 200px;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+}

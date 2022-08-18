@@ -1,0 +1,186 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Noticia Text', serif;
+  background: url('../../img/pr2.jpg');
+  /* background: url('../../../public/images/virus.jpg'); */
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 0;
+}
+
+.container .box1 {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+.container .box1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.container .box1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.container .box1:hover::before,
+.container .box1:hover::after {
+  transform: skewX(0);
+  left: 40px;
+  width: calc(100% - 90px);
+
+}
+
+.box1:nth-child(1)::before,
+.box1:nth-child(1)::after {
+  background: linear-gradient(315deg, yellow, red);
+  filter: blur(15px);
+}
+
+.box1:nth-child(2)::before,
+.box1:nth-child(2)::after {
+  background: linear-gradient(315deg, blue, yellow);
+  filter: blur(15px);
+}
+
+.box1:nth-child(3)::before,
+.box1:nth-child(3)::after {
+  background: linear-gradient(315deg, green, yellow);
+  filter: blur(15px);
+}
+
+.box1:nth-child(4)::before,
+.box1:nth-child(4)::after {
+  background: linear-gradient(315deg, orange, chartreuse);
+  filter: blur(15px);
+}
+
+.container .box1 .span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.container .box1 .span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px black;
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+}
+
+.container .box1:hover .span::before {
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.container .box1 .span::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px black;
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+}
+
+.container .box1:hover .span::after {
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.container .box1 .box-cont {
+  position: relative;
+  left: 0;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgb(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px white;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  transform: 0.5s;
+  z-index: 1;
+}
+
+.container .box1 .box-cont a {
+
+  font-size: 20px;
+  color: white;
+  text-shadow: 5px 5px 3px black;
+}
+
+.span2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.icon {
+  color: blue;
+  margin-right: 10px;
+  font-size: 35px;
+}

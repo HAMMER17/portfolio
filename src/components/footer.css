@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  font-size: 20px;
+  background: var(--bg-color);
+  color: var(--color);
+  padding: 10px;
+}
+
+.footer-item {
+  margin: 0 25px;
+  color: var(--color);
+}
+
+h3 {
+  font-family: 'Indie Flower', cursive;
+}
+
+@media screen and (max-width: 740px) {
+  .footer {
+    flex-direction: column;
+  }
+}
