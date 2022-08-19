@@ -184,3 +184,11 @@
   margin-right: 10px;
   font-size: 35px;
 }
+
+@media screen and (max-width: 740px) {
+  .container {
+    flex-wrap: wrap;
+    /* background: yellow; */
+    height: 100%;
+  }
+}

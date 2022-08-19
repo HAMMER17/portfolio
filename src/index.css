@@ -18,11 +18,11 @@ a {
 
 }
 
-/* a:hover {
+a:hover {
   text-shadow: 5px 5px 3px var(--color);
   transition: 0.5s;
   color: yellow;
-} */
+}
 
 html {
   scroll-behavior: smooth;
