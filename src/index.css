@@ -6,6 +6,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  /* overflow: hidden; */
+  /* max-height: 100vh; */
   /* font-family: 'Dancing Script', cursive;
 font-family: 'Great Vibes', cursive;
 font-family: 'Indie Flower', cursive;

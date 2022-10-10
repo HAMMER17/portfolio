@@ -10,7 +10,7 @@ import './index.css';
 
 function App() {
   return (
-    <>
+    <div className='app'>
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path='/portfolio' element={<Portfolio />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 

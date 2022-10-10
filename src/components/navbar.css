@@ -29,3 +29,8 @@
   cursor: pointer;
   transition: 0.5s;
 }
+
+.li:hover {
+  transform: scale(1.2);
+  color: yellow;
+}
