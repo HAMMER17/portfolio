@@ -1,8 +1,10 @@
 .p {
   color: var(--color);
-  column-count: 2;
+  font-size: 35px;
+  margin-left: 50px;
   padding: 20px;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Great Vibes', cursive;
+
 }
 
 .h1 {

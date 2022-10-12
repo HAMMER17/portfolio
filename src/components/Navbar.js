@@ -1,14 +1,20 @@
 import React from 'react'
-
+import Moment from 'moment'
 import './navbar.css'
 
 const Navbar = () => {
-
+  const [time, setTime] = React.useState([])
+  const data = new Date()
+  React.useEffect(() => {
+    setTimeout(() => {
+      setTime(Moment(data).format('MMMM Do YYYY, h:mm:ss a'))
+    }, 1000)
+  })
   return (
     <>
 
       <h1 className='h1'>i am frilanser!!</h1>
-      <p className='p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati nam eius distinctio eum animi enim molestias dignissimos suscipit similique a, quas molestiae fugit hic facere culpa maiores architecto. Perspiciatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium inventore ipsam, optio harum suscipit, magnam molestiae itaque eum, atque perspiciatis asperiores laudantium hic nam. Hic necessitatibus consectetur sit eius ratione.
+      <p className='p'>{time}
       </p>
 
     </>

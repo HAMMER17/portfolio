@@ -23,16 +23,16 @@ const Form = () => {
   return (
     <div className='form'>
       <form action="" className='left' ref={form} onSubmit={handleSubmit}>
-        <label htmlFor="">Name</label>
+        <label htmlFor="name" className='label'>Name</label>
         <input type="text" className='input' name='name' />
 
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email" className='label'>Email</label>
         <input type="email" className='input' name='email' />
 
-        <label htmlFor="phone">Phone</label>
+        <label htmlFor="phone" className='label'>Phone</label>
         <input type="text" className='input' name='phone' />
 
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message" className='label'>Message</label>
         <input type="text" name="message" placeholder='text...'
           className='input'></input>
         <button className='button' type='submit'>send</button>

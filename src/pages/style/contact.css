@@ -175,14 +175,3 @@
     flex-direction: column;
   }
 }
-
-.p3 {
-
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  width: 200px;
-  color: white;
-  font-family: 'Indie Flower', cursive;
-
-}
