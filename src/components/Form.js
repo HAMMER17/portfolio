@@ -19,6 +19,7 @@ const Form = () => {
       }, (error) => {
         console.log(error.text);
       });
+    e.target.reset()
   }
   return (
     <div className='form'>
@@ -34,7 +35,7 @@ const Form = () => {
 
         <label htmlFor="message" className='label'>Message</label>
         <input type="text" name="message" placeholder='text...'
-          className='input'></input>
+          className='input' />
         <button className='button' type='submit'>send</button>
       </form>
       <hr />

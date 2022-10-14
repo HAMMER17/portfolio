@@ -5,11 +5,11 @@ import './navbar.css'
 const Navbar = () => {
   const [time, setTime] = React.useState([])
   const data = new Date()
-  React.useEffect(() => {
-    setTimeout(() => {
-      setTime(Moment(data).format('MMMM Do YYYY, h:mm:ss a'))
-    }, 1000)
-  })
+  // React.useEffect(() => {
+  setTimeout(() => {
+    setTime(Moment(data).format('MMMM Do YYYY, h:mm:ss a'))
+  }, 1000)
+  // })
   return (
     <>
 
