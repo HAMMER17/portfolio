@@ -114,8 +114,8 @@
   position: absolute;
   top: 100px;
   left: 1100px;
-  width: 200px;
-  color: white;
+  /* width: 200px; */
+  /* color: white; */
   font-family: 'Indie Flower', cursive;
 }
 
