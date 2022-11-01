@@ -175,3 +175,13 @@
     flex-direction: column;
   }
 }
+
+.pp2 {
+  margin: 30px;
+  width: 300px;
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Great Vibes', cursive; */
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Noticia Text', serif;
+  color: white;
+}

@@ -16,10 +16,11 @@ const Weather = () => {
     let api = `https://api.openweathermap.org/data/2.5/weather?lat=${59.44}&lon=${32.00}&appid=${API_URL}&units=metric`
     axios.get(api)
       .then(res => {
-        setCity(res.data.name)
-        setTemp(res.data.main.temp)
-        setDescription(res.data.weather[0].description)
-        setMain(res.data.weather[0].main)
+        console.log(res)
+        // setCity(res.data.name)
+        // setTemp(res.data.main.temp)
+        // setDescription(res.data.weather[0].description)
+        // setMain(res.data.weather[0].main)
       })
       .catch(error => console.log(error))
   }, [])
